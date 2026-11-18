@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#111a1b"><title>El patio de Pocoyo</title><link rel="stylesheet" href="video-responsive.css?v=controls-3"></head><body>
+<main id="experience">
+ <div id="pano"></div>
+ <section id="welcome" class="image-screen"><button id="start" disabled aria-label="Comenzar El patio de Pocoyo"><img src="media/portada.png" alt="El patio de Pocoyo. Pulsa para empezar." fetchpriority="high"></button><p id="start-status" role="status">Preparando el recorrido…</p></section>
+ <section id="ending" class="image-screen" hidden><img src="media/final.png" alt="¡Feliz cumpleaños, Pocoyo!"></section>
+ <section id="video-panel" hidden aria-label="Vídeo"><video controlslist="nofullscreen nodownload noremoteplayback" disableremoteplayback id="memory-video" playsinline webkit-playsinline preload="auto" disablepictureinpicture></video><button id="video-resume" hidden><svg class="icon-play" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M11 7 Q9 6 9 9V23Q9 26 12 24L25 17Q27 16 24 14Z"/></svg><span class="sr-only">Continuar vídeo</span></button><p id="video-status" role="status"></p></section>
+ <nav id="controls" aria-label="Controles del recorrido">
+  <button id="skip" hidden title="Saltar vídeo" aria-label="Saltar vídeo"><svg class="" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M7 7Q5 6 5 9V23Q5 26 8 24L22 17Q24 16 21 14Z"/><rect x="24" y="6" width="4" height="20" rx="2"/></svg></button>
+  <button id="last-photo" disabled title="Ir a la última foto (temporal para pruebas)" aria-label="Ir a la última foto"><svg class="" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="5" y="5" width="22" height="22" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="12" cy="12" r="2.5"/><path d="M7 24L14 16L18 20L22 14L26 24Z"/></svg><span class="test-badge" aria-hidden="true">44</span></button>
+  <button id="pause" disabled title="Pausar" aria-label="Pausar" aria-pressed="false"><svg class="icon-play" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M11 7 Q9 6 9 9V23Q9 26 12 24L25 17Q27 16 24 14Z"/></svg><svg class="icon-pause" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="8" y="6" width="6" height="20" rx="2"/><rect x="19" y="6" width="6" height="20" rx="2"/></svg></button>
+  <button id="restart" disabled title="Reiniciar desde el principio" aria-label="Reiniciar desde el principio"><svg class="" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M8 10a10 10 0 1 1-1 11" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M4 4L15 11L4 14Z"/></svg></button>
+  <button id="fullscreen" title="Pantalla completa" aria-label="Pantalla completa" aria-pressed="false"><svg class="icon-expand" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M12 6H6V12M20 6H26V12M6 20V26H12M26 20V26H20"/></svg><svg class="icon-contract" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M6 12H12V6M20 6V12H26M12 26V20H6M20 26V20H26"/></svg></button>
+ </nav>
+ <p id="notice" role="status" hidden></p>
+</main>
+<script src="sonido.js?v=controls-3"></script><script src="videos.js?v=videos-2"></script><script src="tour.js"></script><script src="recorrido.js?v=controls-3"></script>
+<button id="test-all" style="position:fixed;top:10px;left:10px;z-index:99999">Probar todos los vídeos</button><pre id="test-report" style="position:fixed;top:45px;left:10px;z-index:99999;background:#000b;color:white;font:12px monospace;pointer-events:none"></pre><script src="diagnostico.js"></script></body></html>

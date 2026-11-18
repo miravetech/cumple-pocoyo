@@ -1,0 +1,52 @@
+'use strict';
+let viewer,current=-1,moving=false,frame=0;
+const total=44,el=id=>document.getElementById(id),photo=i=>'foto_'+String(i+1).padStart(2,'0');
+function allOff(){for(let i=0;i<total;i++)for(const key of ['visible','enabled','capture'])viewer.set('hotspot['+photo(i)+'].'+key,false)}
+function targetFov(h){
+ // Margen alrededor de la foto; conserva su escala e inclinación originales.
+ const aspect=Math.max(.35,window.innerWidth/window.innerHeight);
+ const rotation=Number(h.rz||0)*Math.PI/180;
+ const w=Math.abs(Number(h.width)*Math.cos(rotation))+Math.abs(Number(h.height)*Math.sin(rotation));
+ const height=Math.abs(Number(h.height)*Math.cos(rotation))+Math.abs(Number(h.width)*Math.sin(rotation));
+ const size=Math.max(height,w/aspect)*Number(h.scale);
+ return Math.min(120,Math.max(24,2*Math.atan(size/(1000*.55))*180/Math.PI));
+}
+function focusPhoto(index){
+ if(moving||index<0||index>=total)return;
+ moving=true;current=index;allOff();el('ending').hidden=true;el('restart').disabled=true;
+ const name=photo(index),h=viewer.get('hotspot['+name+']');
+ viewer.set('hotspot['+name+'].visible',true);
+ el('progress').textContent='Recuerdo '+(index+1)+' de '+total;
+ el('hint').textContent='Acercándonos a la foto…';
+ const startH=Number(viewer.get('view.hlookat')),startV=Number(viewer.get('view.vlookat')),startF=Number(viewer.get('view.fov'));
+ const delta=((Number(h.ath)-startH)%360+540)%360-180,targetV=Number(h.atv),targetF=targetFov(h);
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const duration=reduced?0:Math.min(2400,1100+Math.abs(delta)*6),start=performance.now();
+ function animate(now){
+  const t=duration?Math.min(1,(now-start)/duration):1,ease=t*t*(3-2*t);
+  viewer.set('view.hlookat',startH+delta*ease);viewer.set('view.vlookat',startV+(targetV-startV)*ease);
+  viewer.set('view.fov',Math.min(135,startF+(targetF-startF)*ease+Math.sin(Math.PI*t)*Math.min(20,Math.abs(delta)/5)));
+  if(t<1){frame=requestAnimationFrame(animate);return}
+  moving=false;viewer.set('hotspot['+name+'].enabled',true);viewer.set('hotspot['+name+'].capture',true);
+  el('restart').disabled=false;el('hint').textContent=index===total-1?'Pulsa la foto para terminar':'Pulsa la foto para descubrir la siguiente';
+ }
+ frame=requestAnimationFrame(animate);
+}
+window.pocoyoClick=id=>{
+ if(moving||Number(id)!==current+1)return;
+ if(current===total-1){allOff();el('ending').hidden=false;el('hint').textContent='Recorrido completado';return}
+ focusPhoto(current+1);
+};
+function restart(){if(!viewer||moving)return;focusPhoto(0)}
+el('restart').onclick=restart;el('again').onclick=restart;
+embedpano({xml:'tour.xml',target:'pano',onready:k=>{
+ viewer=k;let tries=0;
+ const timer=setInterval(()=>{
+  if(!viewer.get('hotspot[foto_44]')){if(++tries>200){clearInterval(timer);el('hint').textContent='No se pudo cargar el tour. Ábrelo mediante tour_testingserver.exe.'}return}
+  clearInterval(timer);
+  for(const name of ['tb_keys','no_d_key'])viewer.set('events['+name+'].onkeydown','');
+  viewer.set('layer[skin_layer].visible',false);viewer.set('layer[skin_control_bar].visible',false);
+  viewer.set('control.usercontrol','off');viewer.set('view.fovtype','VFOV');viewer.set('view.fovmin',20);viewer.set('view.fovmax',140);viewer.set('view.limitview','off');
+  focusPhoto(0);
+ },100);
+}});

@@ -1,0 +1,398 @@
+{
+  "photos": [
+    {
+      "id": "01",
+      "original": "0925c7ff-df35-4977-b9ad-5ad3f0d77264.png",
+      "file": "media/fotos/01.png",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "id": "02",
+      "original": "1000075285.png",
+      "file": "media/fotos/02.png",
+      "width": 1324,
+      "height": 1188
+    },
+    {
+      "id": "03",
+      "original": "1000075396.png",
+      "file": "media/fotos/03.png",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "id": "04",
+      "original": "aebbe6e7_recorte_completo.png",
+      "file": "media/fotos/04.png",
+      "width": 1200,
+      "height": 3250
+    },
+    {
+      "id": "05",
+      "original": "d26c06ee_manta_corregida.png",
+      "file": "media/fotos/05.png",
+      "width": 3600,
+      "height": 2200
+    },
+    {
+      "id": "06",
+      "original": "eb24d876_ninas_sillas.png",
+      "file": "media/fotos/06.png",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "id": "07",
+      "original": "fde21c33_cuatro_ninos.png",
+      "file": "media/fotos/07.png",
+      "width": 1920,
+      "height": 1930
+    },
+    {
+      "id": "08",
+      "original": "hombre_sombrero_rojo_reconstruido.png",
+      "file": "media/fotos/08.png",
+      "width": 927,
+      "height": 1887
+    },
+    {
+      "id": "09",
+      "original": "IMG_0971_tres_personas_torre.png",
+      "file": "media/fotos/09.png",
+      "width": 1450,
+      "height": 1085
+    },
+    {
+      "id": "10",
+      "original": "IMG_1367_personas_sin_fondo.png",
+      "file": "media/fotos/10.png",
+      "width": 1071,
+      "height": 1469
+    },
+    {
+      "id": "11",
+      "original": "IMG_1370_personas_sin_fondo.png",
+      "file": "media/fotos/11.png",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "id": "12",
+      "original": "IMG_1555_hamaca.png",
+      "file": "media/fotos/12.png",
+      "width": 890,
+      "height": 978
+    },
+    {
+      "id": "13",
+      "original": "IMG_1561_bicicleta_reconstruida.png",
+      "file": "media/fotos/13.png",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "14",
+      "original": "IMG_2778_ninos_sin_fondo.png",
+      "file": "media/fotos/14.png",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "id": "15",
+      "original": "IMG_2779_disfraces_reconstruidos.png",
+      "file": "media/fotos/15.png",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "16",
+      "original": "IMG_2941_grupo_hamaca_corregido.png",
+      "file": "media/fotos/16.png",
+      "width": 1013,
+      "height": 1413
+    },
+    {
+      "id": "17",
+      "original": "IMG_3163_personas_hamacas_pizarra_trona.png",
+      "file": "media/fotos/17.png",
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "id": "18",
+      "original": "IMG_3472_recorte_corregido.png",
+      "file": "media/fotos/18.png",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "id": "19",
+      "original": "IMG_3696_recortada.png",
+      "file": "media/fotos/19.png",
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "id": "20",
+      "original": "IMG_4429_recorte_reconstruido.png",
+      "file": "media/fotos/20.png",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "id": "21",
+      "original": "IMG_4448_hamaca_reconstruida.png",
+      "file": "media/fotos/21.png",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "id": "22",
+      "original": "IMG_4459_personas_sin_fondo.png",
+      "file": "media/fotos/22.png",
+      "width": 2300,
+      "height": 1900
+    },
+    {
+      "id": "23",
+      "original": "IMG_4469_ninos_sin_fondo.png",
+      "file": "media/fotos/23.png",
+      "width": 850,
+      "height": 1428
+    },
+    {
+      "id": "24",
+      "original": "IMG_5470_nino_bebe_sin_fondo.png",
+      "file": "media/fotos/24.png",
+      "width": 600,
+      "height": 1250
+    },
+    {
+      "id": "25",
+      "original": "IMG_6326_ninos_juguetes_sin_fondo.png",
+      "file": "media/fotos/25.png",
+      "width": 1350,
+      "height": 1280
+    },
+    {
+      "id": "26",
+      "original": "IMG_7562_tres_personas_sin_fondo.png",
+      "file": "media/fotos/26.png",
+      "width": 800,
+      "height": 720
+    },
+    {
+      "id": "27",
+      "original": "IMG_7801_recorte.png",
+      "file": "media/fotos/27.png",
+      "width": 1923,
+      "height": 818
+    },
+    {
+      "id": "28",
+      "original": "IMG_8456_hombre_nina_sin_fondo.png",
+      "file": "media/fotos/28.png",
+      "width": 220,
+      "height": 300
+    },
+    {
+      "id": "29",
+      "original": "IMG_8547_hombre_nina.png",
+      "file": "media/fotos/29.png",
+      "width": 522,
+      "height": 471
+    },
+    {
+      "id": "30",
+      "original": "IMG_8775_hombre_hamaca.png",
+      "file": "media/fotos/30.png",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "id": "31",
+      "original": "IMG_8935_hamacas.png",
+      "file": "media/fotos/31.png",
+      "width": 1086,
+      "height": 1449
+    },
+    {
+      "id": "32",
+      "original": "IMG_9314_pie_silla_reconstruidos.png",
+      "file": "media/fotos/32.png",
+      "width": 1427,
+      "height": 1102
+    },
+    {
+      "id": "33",
+      "original": "IMG_9535_hombre_nina.png",
+      "file": "media/fotos/33.png",
+      "width": 1179,
+      "height": 961
+    },
+    {
+      "id": "34",
+      "original": "nina_bicicleta_casco.png",
+      "file": "media/fotos/34.png",
+      "width": 345,
+      "height": 691
+    },
+    {
+      "id": "35",
+      "original": "nina_bicicleta_globo.png",
+      "file": "media/fotos/35.png",
+      "width": 1390,
+      "height": 2420
+    },
+    {
+      "id": "36",
+      "original": "nina_con_cubo.png",
+      "file": "media/fotos/36.png",
+      "width": 941,
+      "height": 1672
+    },
+    {
+      "id": "37",
+      "original": "nina_hello_summer_reconstruida.png",
+      "file": "media/fotos/37.png",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "38",
+      "original": "ninas_bicicleta_correpasillos.png",
+      "file": "media/fotos/38.png",
+      "width": 309,
+      "height": 396
+    },
+    {
+      "id": "39",
+      "original": "ninos_globos_recorte.png",
+      "file": "media/fotos/39.png",
+      "width": 1080,
+      "height": 1456
+    },
+    {
+      "id": "40",
+      "original": "Imagen de ChatGPT 16 nov 2026, 13_18_10.png",
+      "file": "media/fotos/40.png",
+      "width": 1484,
+      "height": 1060
+    },
+    {
+      "id": "41",
+      "original": "ninos_sentados_en_las_mesas.png",
+      "file": "media/fotos/41.png",
+      "width": 1572,
+      "height": 1001
+    },
+    {
+      "id": "42",
+      "original": "pizarra_figuras_reconstruidas.png",
+      "file": "media/fotos/42.png",
+      "width": 1192,
+      "height": 1319
+    },
+    {
+      "id": "43",
+      "original": "senor_calvo_con_hamacas.png",
+      "file": "media/fotos/43.png",
+      "width": 1913,
+      "height": 822
+    },
+    {
+      "id": "44",
+      "original": "WhatsApp Image 2026-11-15 at 23.12.59.png",
+      "file": "media/fotos/44.png",
+      "width": 2048,
+      "height": 1536
+    }
+  ],
+  "videos": [
+    {
+      "id": "03",
+      "original": "03.MP4",
+      "file": "media/videos_playback/03.mp4",
+      "source": "media/videos/03.MP4"
+    },
+    {
+      "id": "06",
+      "original": "06.MP4",
+      "file": "media/videos_playback/06.mp4",
+      "source": "media/videos/06.MP4"
+    },
+    {
+      "id": "08",
+      "original": "08.MP4",
+      "file": "media/videos_playback/08.mp4",
+      "source": "media/videos/08.MP4"
+    },
+    {
+      "id": "11",
+      "original": "11.MP4",
+      "file": "media/videos_playback/11.mp4",
+      "source": "media/videos/11.MP4"
+    },
+    {
+      "id": "12",
+      "original": "12.MP4",
+      "file": "media/videos_playback/12.mp4",
+      "source": "media/videos/12.MP4"
+    },
+    {
+      "id": "14",
+      "original": "14.MP4",
+      "file": "media/videos_playback/14.mp4",
+      "source": "media/videos/14.MP4"
+    },
+    {
+      "id": "18",
+      "original": "18.MOV",
+      "file": "media/videos_playback/18.mp4",
+      "source": "media/videos/18.MOV"
+    },
+    {
+      "id": "21",
+      "original": "21.MP4",
+      "file": "media/videos_playback/21.mp4",
+      "source": "media/videos/21.MP4"
+    },
+    {
+      "id": "22",
+      "original": "22.MP4",
+      "file": "media/videos_playback/22.mp4",
+      "source": "media/videos/22.MP4"
+    },
+    {
+      "id": "26",
+      "original": "26.MP4",
+      "file": "media/videos_playback/26.mp4",
+      "source": "media/videos/26.MP4"
+    },
+    {
+      "id": "28",
+      "original": "28.MP4",
+      "file": "media/videos_playback/28.mp4",
+      "source": "media/videos/28.MP4"
+    },
+    {
+      "id": "29",
+      "original": "29.MP4",
+      "file": "media/videos_playback/29.mp4",
+      "source": "media/videos/29.MP4"
+    },
+    {
+      "id": "33",
+      "original": "33.MP4",
+      "file": "media/videos_playback/33.mp4",
+      "source": "media/videos/33.MP4"
+    },
+    {
+      "id": "34",
+      "original": "34.MP4",
+      "file": "media/videos_playback/34.mp4",
+      "source": "media/videos/34.MP4"
+    }
+  ]
+}

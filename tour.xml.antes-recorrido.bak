@@ -1,0 +1,134 @@
+﻿<krpano version="1.22" title="Cumpleaños de Pocoyo · Preparación">
+
+	<include url="skin/vtourskin.xml" />
+	<include url="toolbox/toolbox.xml" />
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="false"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               maps_loadonfirstuse="true"
+	               gyro="true"
+	               gyro_keeplookingdirection="false"
+	               webvr="true"
+	               webvr_keeplookingdirection="true"
+	               webvr_prev_next_hotspots="true"
+	               autotour="false"
+	               littleplanetintro="false"
+	               followmousecontrol="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext=""
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
+
+	
+	<scene name="scene_111" title="El patio de Pocoyo" onstart="" thumburl="panos/111.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/111.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/111.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048,3840" />
+		</image>
+
+
+		<!-- Todas visibles durante la colocación. Secuencia y vídeos pendientes. -->
+		<hotspot name="foto_01" url="media/fotos/01.png" ath="-165.0000" atv="-18" distorted="true" width="360" height="270" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('01'));" />
+		<hotspot name="foto_02" url="media/fotos/02.png" ath="-139.6154" atv="-18" distorted="true" width="360" height="323" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('02'));" />
+		<hotspot name="foto_03" url="media/fotos/03.png" ath="-114.2308" atv="-18" distorted="true" width="270" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('03'));" />
+		<hotspot name="foto_04" url="media/fotos/04.png" ath="-88.8462" atv="-18" distorted="true" width="133" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('04'));" />
+		<hotspot name="foto_05" url="media/fotos/05.png" ath="-63.4615" atv="-18" distorted="true" width="360" height="220" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('05'));" />
+		<hotspot name="foto_06" url="media/fotos/06.png" ath="-38.0769" atv="-18" distorted="true" width="360" height="270" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('06'));" />
+		<hotspot name="foto_07" url="media/fotos/07.png" ath="-12.6923" atv="-18" distorted="true" width="358" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('07'));" />
+		<hotspot name="foto_08" url="media/fotos/08.png" ath="12.6923" atv="-18" distorted="true" width="177" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('08'));" />
+		<hotspot name="foto_09" url="media/fotos/09.png" ath="38.0769" atv="-18" distorted="true" width="360" height="269" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('09'));" />
+		<hotspot name="foto_10" url="media/fotos/10.png" ath="63.4615" atv="-18" distorted="true" width="262" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('10'));" />
+		<hotspot name="foto_11" url="media/fotos/11.png" ath="88.8461" atv="-18" distorted="true" width="270" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('11'));" />
+		<hotspot name="foto_12" url="media/fotos/12.png" ath="114.2308" atv="-18" distorted="true" width="328" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('12'));" />
+		<hotspot name="foto_13" url="media/fotos/13.png" ath="139.6154" atv="-18" distorted="true" width="240" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('13'));" />
+		<hotspot name="foto_14" url="media/fotos/14.png" ath="165.0000" atv="-18" distorted="true" width="270" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('14'));" />
+		<hotspot name="foto_15" url="media/fotos/15.png" ath="-165.0000" atv="0" distorted="true" width="360" height="240" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('15'));" />
+		<hotspot name="foto_16" url="media/fotos/16.png" ath="-139.6154" atv="0" distorted="true" width="258" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('16'));" />
+		<hotspot name="foto_17" url="media/fotos/17.png" ath="-114.2308" atv="0" distorted="true" width="360" height="270" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('17'));" />
+		<hotspot name="foto_18" url="media/fotos/18.png" ath="-88.8462" atv="0" distorted="true" width="270" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('18'));" />
+		<hotspot name="foto_19" url="media/fotos/19.png" ath="-63.4615" atv="0" distorted="true" width="270" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('19'));" />
+		<hotspot name="foto_20" url="media/fotos/20.png" ath="-38.0769" atv="0" distorted="true" width="360" height="270" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('20'));" />
+		<hotspot name="foto_21" url="media/fotos/21.png" ath="-12.6923" atv="0" distorted="true" width="360" height="270" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('21'));" />
+		<hotspot name="foto_22" url="media/fotos/22.png" ath="12.6923" atv="0" distorted="true" width="360" height="297" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('22'));" />
+		<hotspot name="foto_23" url="media/fotos/23.png" ath="38.0769" atv="0" distorted="true" width="214" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('23'));" />
+		<hotspot name="foto_24" url="media/fotos/24.png" ath="63.4615" atv="0" distorted="true" width="173" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('24'));" />
+		<hotspot name="foto_25" url="media/fotos/25.png" ath="88.8461" atv="0" distorted="true" width="360" height="341" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('25'));" />
+		<hotspot name="foto_26" url="media/fotos/26.png" ath="114.2308" atv="0" distorted="true" width="360" height="324" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('26'));" />
+		<hotspot name="foto_27" url="media/fotos/27.png" ath="139.6154" atv="0" distorted="true" width="360" height="153" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('27'));" />
+		<hotspot name="foto_28" url="media/fotos/28.png" ath="165.0000" atv="0" distorted="true" width="264" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('28'));" />
+		<hotspot name="foto_29" url="media/fotos/29.png" ath="-165.0000" atv="18" distorted="true" width="360" height="325" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('29'));" />
+		<hotspot name="foto_30" url="media/fotos/30.png" ath="-139.6154" atv="18" distorted="true" width="270" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('30'));" />
+		<hotspot name="foto_31" url="media/fotos/31.png" ath="-114.2308" atv="18" distorted="true" width="270" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('31'));" />
+		<hotspot name="foto_32" url="media/fotos/32.png" ath="-88.8462" atv="18" distorted="true" width="360" height="278" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('32'));" />
+		<hotspot name="foto_33" url="media/fotos/33.png" ath="-63.4615" atv="18" distorted="true" width="360" height="293" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('33'));" />
+		<hotspot name="foto_34" url="media/fotos/34.png" ath="-38.0769" atv="18" distorted="true" width="180" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('34'));" />
+		<hotspot name="foto_35" url="media/fotos/35.png" ath="-12.6923" atv="18" distorted="true" width="207" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('35'));" />
+		<hotspot name="foto_36" url="media/fotos/36.png" ath="12.6923" atv="18" distorted="true" width="203" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('36'));" />
+		<hotspot name="foto_37" url="media/fotos/37.png" ath="38.0769" atv="18" distorted="true" width="240" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('37'));" />
+		<hotspot name="foto_38" url="media/fotos/38.png" ath="63.4615" atv="18" distorted="true" width="281" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('38'));" />
+		<hotspot name="foto_39" url="media/fotos/39.png" ath="88.8461" atv="18" distorted="true" width="267" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('39'));" />
+		<hotspot name="foto_40" url="media/fotos/40.png" ath="114.2308" atv="18" distorted="true" width="360" height="229" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('40'));" />
+		<hotspot name="foto_41" url="media/fotos/41.png" ath="139.6154" atv="18" distorted="true" width="325" height="360" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('41'));" />
+		<hotspot name="foto_42" url="media/fotos/42.png" ath="165.0000" atv="18" distorted="true" width="360" height="155" scale="0.24" rx="0" ry="0" rz="0" visible="true" enabled="true" capture="true" alpha="1" zorder="10" handcursor="true" onclick="js(pocoyoSelect('42'));" />
+	</scene>
+
+
+</krpano>
