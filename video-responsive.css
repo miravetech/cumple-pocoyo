@@ -29,3 +29,20 @@
 #video-resume svg{width:40px;height:40px}
 @media(max-width:600px),(max-height:450px){#controls{gap:8px;right:calc(10px + env(safe-area-inset-right) + var(--viewport-right,0px));bottom:calc(12px + env(safe-area-inset-bottom) + var(--viewport-bottom,0px))}#controls button{width:44px;height:44px}#controls svg{width:25px;height:25px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* The artwork is contained; only the painted Play has a hit target. */
+.cover-art{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(100vw,177.471vw);width:min(100vw,177.471dvh);height:auto;aspect-ratio:1670/941}
+#start{inset:auto;left:42.5%;top:82.5%;width:15%;height:15%;border-radius:45%;z-index:1}
+#start:focus-visible{outline:4px solid #fff;outline-offset:3px;box-shadow:0 0 0 7px #1599d6}
+@media(orientation:portrait){.cover-art{width:min(100vw,56.28dvh);aspect-ratio:941/1672}#start{left:36.5%;top:68.8%;width:26%;height:8.4%}}
+/* A separate footer prevents portrait video compositing from covering controls. */
+#experience{--video-footer:84px}
+#experience[data-video="true"]{background:#000}
+#experience[data-video="true"]::after{content:"";position:absolute;left:0;right:0;bottom:0;height:calc(var(--video-footer) + env(safe-area-inset-bottom));background:#000;z-index:20;pointer-events:none}
+#experience[data-video="true"] #video-panel{bottom:calc(var(--video-footer) + env(safe-area-inset-bottom));height:auto;padding:0;contain:layout paint}
+#experience[data-video="true"] #controls{background:#111a1b;border-radius:32px;padding:5px 8px;bottom:calc(10px + env(safe-area-inset-bottom) + var(--viewport-bottom,0px));transform:none;isolation:auto}
+#memory-video{pointer-events:none}
+@media(max-width:600px),(max-height:450px){#experience{--video-footer:72px}}
+@supports not (height:100dvh){.cover-art{width:min(100vw,177.471vh)}@media(orientation:portrait){.cover-art{width:min(100vw,56.28vh)}}}
+.cover-art.landscape-fallback{width:min(100vw,177.471dvh);aspect-ratio:1670/941}
+.cover-art.landscape-fallback #start{left:42.5%;top:82.5%;width:15%;height:15%}
