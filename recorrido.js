@@ -60,7 +60,7 @@ function beginPlanet(){
  hidePhotos();stage='planet';current=-1;
  viewer.set('view.stereographic',true);viewer.set('view.fisheye',1);viewer.set('view.fovmax',150);
  viewer.set('view.hlookat',0);viewer.set('view.vlookat',90);viewer.set('view.fov',150);
- motion={elapsed:0,duration:window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:5000};
+ motion={elapsed:0,duration:window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:8000};
  updateControls();
 }
 function showEnd(){hidePhotos();stage='end';el('ending').hidden=false;updateControls()}
@@ -151,9 +151,11 @@ function tick(now){
  if(!paused()){
   if(stage==='planet'&&motion){
    motion.elapsed+=dt;const t=motion.duration?clamp(motion.elapsed/motion.duration):1;
-   const p=clamp((t-.18)/.82),e=p*p*(3-2*p);
+   // First rotate a full turn as a little planet, then descend towards photo 1.
+   const spin=clamp(t/.55),rotation=360*spin*spin*(3-2*spin);
+   const p=clamp((t-.55)/.45),e=p*p*(3-2*p);
    const h=viewer.get('hotspot[foto_01]');
-   viewer.set('view.hlookat',Number(h.ath)*e);viewer.set('view.vlookat',90+(Number(h.atv)-90)*e);
+   viewer.set('view.hlookat',rotation+Number(h.ath)*e);viewer.set('view.vlookat',90+(Number(h.atv)-90)*e);
    viewer.set('view.fisheye',1-e);viewer.set('view.fov',150+(targetFov(h)-150)*e);
    if(t===1){viewer.set('view.fisheye',0);viewer.set('view.fovmax',140);motion=null;focusPhoto(0)}
   }else if(stage==='transition'&&motion){
